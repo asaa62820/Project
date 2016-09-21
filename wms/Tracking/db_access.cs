@@ -14,7 +14,7 @@ namespace dbaccess
         //public static string connectionString = ConfigurationManager.AppSettings["ConnectionString"];    
         // public static string connectionString = System.Web.HttpContext.Current.Server.MapPath(ConfigurationManager.AppSettings["AccessConnectionString"]);   
                                                //provider=Microsoft.Ace.Oledb.12.0;Data Source=Access文件路径
-        public static string connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\\\D-ca5919e567a14\\y\\LABEL PRINTING TOOL.accdb;";// ConfigurationManager.AppSettings["AccessConnectionString"];    
+        public static string connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=y:\\LABEL PRINTING TOOL.accdb;";// ConfigurationManager.AppSettings["AccessConnectionString"];    
         public DbHelperACE()    
         {    
         }  

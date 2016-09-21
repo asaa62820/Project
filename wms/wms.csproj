@@ -85,10 +85,10 @@
       <HintPath>bin\ExcelLibrary.dll</HintPath>
     </Reference>
     <Reference Include="FW">
-      <HintPath>bin\Release\FW.dll</HintPath>
+      <HintPath>..\DLL\FW.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>..\NPOI 2.2.1 binary package\Release\Net40\ICSharpCode.SharpZipLib.dll</HintPath>
+      <HintPath>..\DLL\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
     <Reference Include="Interop.Microsoft.Office.Core, Version=2.3.0.0, Culture=neutral">
       <SpecificVersion>False</SpecificVersion>
@@ -103,16 +103,16 @@
       <HintPath>bin\Newtonsoft.Json.Net20.dll</HintPath>
     </Reference>
     <Reference Include="NPOI">
-      <HintPath>bin\x86\Release\NPOI.dll</HintPath>
+      <HintPath>..\DLL\NPOI.dll</HintPath>
     </Reference>
     <Reference Include="NPOI.OOXML">
-      <HintPath>bin\x86\Release\NPOI.OOXML.dll</HintPath>
+      <HintPath>..\DLL\NPOI.OOXML.dll</HintPath>
     </Reference>
     <Reference Include="NPOI.OpenXml4Net">
-      <HintPath>bin\x86\Release\NPOI.OpenXml4Net.dll</HintPath>
+      <HintPath>..\DLL\NPOI.OpenXml4Net.dll</HintPath>
     </Reference>
     <Reference Include="NPOI.OpenXmlFormats">
-      <HintPath>bin\x86\Release\NPOI.OpenXmlFormats.dll</HintPath>
+      <HintPath>..\DLL\NPOI.OpenXmlFormats.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll</HintPath>
