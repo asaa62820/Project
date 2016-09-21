@@ -1,0 +1,3 @@
+D:\2016\Project\wms\bin\Debug3\wms.exe.config
+D:\2016\Project\wms\obj\Debug\Interop.SHDocVw.dll
+D:\2016\Project\wms\obj\Debug\wms.csproj.ResolveComReference.cache

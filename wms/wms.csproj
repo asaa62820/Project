@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8A70F457-46A7-41FB-A2B5-A5CCD798A21E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>wms</RootNamespace>
+    <AssemblyName>wms</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/UniversalAnalyse/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug3\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExcelLibrary">
+      <HintPath>bin\ExcelLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="FW">
+      <HintPath>bin\Release\FW.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\NPOI 2.2.1 binary package\Release\Net40\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Microsoft.Office.Core, Version=2.3.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Interop.Microsoft.Office.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Net20, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Newtonsoft.Json.Net20.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>bin\x86\Release\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>bin\x86\Release\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>bin\x86\Release\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats">
+      <HintPath>bin\x86\Release\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="del\Array2DT.cs" />
+    <Compile Include="BarCode\barcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarCode\barcode.Designer.cs">
+      <DependentUpon>barcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="del\ButtonObj.cs" />
+    <Compile Include="del\C1XLS.cs" />
+    <Compile Include="del\Class1.cs" />
+    <Compile Include="del\dddownload.cs" />
+    <Compile Include="del\dopassword.cs" />
+    <Compile Include="del\DrawBase.cs" />
+    <Compile Include="del\DrawList.cs" />
+    <Compile Include="FBA\fba_query.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBA\fba_query.Designer.cs">
+      <DependentUpon>fba_query.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FBA\fba_shipping_sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBA\fba_shipping_sales.Designer.cs">
+      <DependentUpon>fba_shipping_sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="del\FrmAddTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="del\FrmAddTable.Designer.cs">
+      <DependentUpon>FrmAddTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="del\Frm_test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="del\Frm_test.Designer.cs">
+      <DependentUpon>Frm_test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\Invoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice\Invoice.Designer.cs">
+      <DependentUpon>Invoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\Invoice_new.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice\Invoice_new.Designer.cs">
+      <DependentUpon>Invoice_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="del\LineObj.cs" />
+    <Compile Include="Class\local_excel.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="del\MyDataSet.cs" />
+    <Compile Include="Class\MyEXCEL.cs" />
+    <Compile Include="del\myproxy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="del\myproxy.Designer.cs">
+      <DependentUpon>myproxy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\MySql.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\MySql.Designer.cs">
+      <DependentUpon>MySql.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\NPOIOprateExcel.cs" />
+    <Compile Include="del\Photo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="del\Photo.Designer.cs">
+      <DependentUpon>Photo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="del\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BarCode\barcode.resx">
+      <DependentUpon>barcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FBA\fba_query.resx">
+      <DependentUpon>fba_query.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FBA\fba_shipping_sales.resx">
+      <DependentUpon>fba_shipping_sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="del\FrmAddTable.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmAddTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="del\Frm_test.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice\Invoice.resx">
+      <DependentUpon>Invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice\Invoice_new.resx">
+      <DependentUpon>Invoice_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="del\myproxy.resx">
+      <DependentUpon>myproxy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\MySql.resx">
+      <DependentUpon>MySql.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="del\Photo.resx">
+      <DependentUpon>Photo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tracking\Addr_ups.resx">
+      <DependentUpon>Addr_ups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tracking\all_list.resx">
+      <DependentUpon>all_list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tracking\Addr_dhl_usps.resx">
+      <DependentUpon>Addr_dhl_usps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="del\wmb.resx">
+      <DependentUpon>wmb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="del\校验URL.resx">
+      <DependentUpon>校验URL.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="del\v1.xls" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="del\RectangleObj.cs" />
+    <Compile Include="del\spinner-format.cs" />
+    <Compile Include="Tracking\Addr_ups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tracking\Addr_ups.Designer.cs">
+      <DependentUpon>Addr_ups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tracking\all_list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tracking\all_list.Designer.cs">
+      <DependentUpon>all_list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tracking\db_access.cs" />
+    <Compile Include="Tracking\Addr_dhl_usps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tracking\Addr_dhl_usps.Designer.cs">
+      <DependentUpon>Addr_dhl_usps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="del\wmb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="del\wmb.Designer.cs">
+      <DependentUpon>wmb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="del\校验URL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="del\校验URL.Designer.cs">
+      <DependentUpon>校验URL.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="MSHTML">
+      <Guid>{3050F1C5-98B5-11CF-BB82-00AA00BDCE0B}</Guid>
+      <VersionMajor>4</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="SHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TX.Framework.WindowUI\TX.Framework.WindowUI.csproj">
+      <Project>{e8746b10-eaaf-44b7-95cc-29e4c42ec8d5}</Project>
+      <Name>TX.Framework.WindowUI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
