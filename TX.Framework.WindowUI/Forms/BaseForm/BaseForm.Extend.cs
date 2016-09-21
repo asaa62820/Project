@@ -62,7 +62,7 @@ namespace TX.Framework.WindowUI.Forms
 
         protected DialogResult Info(string message)
         {
-            return this.Info("提示信息", message);
+            return this.Info("Message", message);
         }
 
         protected DialogResult Error(string captionText, string message)

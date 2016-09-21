@@ -22,7 +22,7 @@ namespace TX.Framework.WindowUI.Forms
 
         public static DialogResult Info(string message)
         {
-            return Info("提示信息", message);
+            return Info("Message", message);
         }
 
         public static DialogResult Error(string captionText, string message)

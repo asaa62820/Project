@@ -770,6 +770,9 @@
     <EmbeddedResource Include="Controls\TXTreeComboBox\TXTreeComboBox.resx">
       <DependentUpon>TXTreeComboBox.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BaseForm\BaseForm.ControlBox.resx">
+      <DependentUpon>BaseForm.ControlBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\PopBox\PopForm.resx">
       <DependentUpon>PopForm.cs</DependentUpon>
     </EmbeddedResource>
