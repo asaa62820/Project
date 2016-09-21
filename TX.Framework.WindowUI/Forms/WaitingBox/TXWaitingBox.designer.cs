@@ -77,11 +77,11 @@
             this.ControlBox = false;
             this.Controls.Add(this.txPanel1);
             this.CornerRadius = 2;
-            this.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Location = new System.Drawing.Point(0, 0);
             this.Name = "TXWaitingBox";
             this.ResizeEnable = false;
-            this.Text = "Please Wait...";
+            this.Text = "请稍后...";
             this.txPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.loadImage)).EndInit();
             this.ResumeLayout(false);

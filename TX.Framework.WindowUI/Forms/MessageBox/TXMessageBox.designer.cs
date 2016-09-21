@@ -87,7 +87,7 @@ namespace TX.Framework.WindowUI.Forms
             this.tableLayoutPanel2.SetRowSpan(this.labMessage, 3);
             this.labMessage.Size = new System.Drawing.Size(265, 102);
             this.labMessage.TabIndex = 0;
-            this.labMessage.Text = "Msg！";
+            this.labMessage.Text = "Message";
             this.labMessage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel2
@@ -148,7 +148,7 @@ namespace TX.Framework.WindowUI.Forms
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(80, 25);
             this.btnCancel.TabIndex = 1;
-            this.btnCancel.Text = "Calcel";
+            this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
